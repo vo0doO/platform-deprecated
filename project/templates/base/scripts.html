@@ -1,0 +1,61 @@
+{% load static %}
+  <!-- SCRIPTS -->
+  <script src="/static/js/2.a807f3af.chunk.js"></script>
+  <script src="/static/js/main.a7a5d6d8.chunk.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="{% static "js/jquery-3.4.1.min.js" %}"></script>
+  <!-- JQuery: inputmask -->
+  <script src="{% static "js/addons/inputmask/jquery.inputmask.js" %}"></script>
+  <script src="{% static "js/addons/inputmask/bindings/inputmask.binding.js" %}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static "js/popper.min.js" %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static "js/mdb.min.js" %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static "js/modules/wow.js" %}"></script>
+  <!-- Qiwi -->
+  <script src='https://oplata.qiwi.com/popup/v1.js'></script>
+  <!-- Initializations -->
+
+
+<script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+</script>
+
+  <!-- Inputmask -->
+<script type="text/javascript">
+    $(document).ready(function(){
+      $(".phonemask").inputmask({"mask": "   (999)  999 - 99 - 99"});
+    })
+</script>
+
+<script>
+$(function(
+){
+    {#$(".button-collapse").sideNav();#}
+    var el = document.querySelector('.custom-scrollbar');
+    var ps = new PerfectScrollbar(el);
+
+    // SideNav Default Options
+$('.button-collapse').sideNav({
+edge: 'left', // Choose the horizontal origin
+closeOnClick: false, // Closes side-nav on &lt;a&gt; clicks, useful for Angular/Meteor
+breakpoint: 1440, // Breakpoint for button collapse
+MENU_WIDTH: 240, // Width for sidenav
+timeDurationOpen: 300, // Time duration open menu
+timeDurationClose: 200, // Time duration open menu
+timeDurationOverlayOpen: 50, // Time duration open overlay
+timeDurationOverlayClose: 200, // Time duration close overlay
+easingOpen: 'easeOutQuad', // Open animation
+easingClose: 'easeOutCubic', // Close animation
+showOverlay: true, // Display overflay
+showCloseButton: false // Append close button into siednav
+});
+
+
+
+})
+</script>

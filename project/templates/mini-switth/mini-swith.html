@@ -1,0 +1,95 @@
+<div class="switch-version d-none d-md-block">
+  <div class="switch-web active">
+   <a class="d-block text-center">
+      <i class="fas fa-desktop"></i>
+      <span class="switch-title">web</span>
+    </a>
+  </div>
+  <div class="switch-web-products ">
+    <a href="/docs/jquery/"><span class="switch-to mdb-jquery active" id="jQuery"></span></a>
+    <a href="/docs/angular/"><span class="switch-to mdb-angular " id="Angular"></span></a>
+    <a href="/docs/react/"><span class="switch-to mdb-react " id="React"></span></a>
+    <a href="/docs/vue/"><span class="switch-to mdb-vue " id="Vue"></span></a>
+  </div>
+  <div class="switch-mobile-products switch-off">
+    <a href="/docs/angular/mobile/"><span class="switch-to switch-to-mobile mdb-angular-mobile " id="Angular-Mobile"></span></a>
+    <a href="/docs/react/mobile/"><span class="switch-to switch-to-mobile mdb-react-mobile " id="React-Mobile"></span></a>
+    <a href="/docs/vue/mobile/"><span class="switch-to switch-to-mobile mdb-vue-mobile " id="Vue-Mobile"></span></a>
+  </div>
+  <div class="switch-mobile ">
+    <a class="d-block text-center">
+      <i class="fas fa-mobile-alt"></i>
+      <span class="switch-title">mobile</span>
+    </a>
+  </div>
+
+</div>
+
+<style>
+  .switch-version {
+    z-index: 1000;
+  }
+  .switch-off {
+    display: none;
+  }
+  .switch-title {
+    font-size: 11px;
+  }
+  .switch-web {
+    border-top: 1px solid #33b5e5;
+    border-left: 1px solid #33b5e5;
+    color: #6b6e72;
+    border-top-left-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .switch-mobile {
+    border-bottom: 1px solid #FF8800;
+    border-left: 1px solid #FF8800;
+    color: #6b6e72;
+    border-bottom-left-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .switch-web.active, .switch-web:not(.active):hover {
+    color: white;
+    background-color: #33b5e5;
+  }
+  .switch-mobile.active, .switch-mobile:not(.active):hover {
+    color: white;
+    background-color: #FF8800;
+  }
+  .switch-web i, .switch-mobile i {
+    position: relative;
+    top: 4px;
+  }
+  .switch-web span, .switch-mobile span {
+    width: 100%;
+    position: relative;
+    top: -4px;
+  }
+  .switch-web-products {
+    border-left: 1px solid #33b5e5;
+  }
+  .switch-mobile-products {
+    border-left: 1px solid #FF8800;
+  }
+  .switch-version a:last-child>.switch-to {
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .switch-version a:first-child>.switch-to {
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .switch-to-mobile.mdb-vue-mobile {
+    background-image: url('https://mdbootstrap.com/img/logo/mdb-angular.png');
+    background-position: 0 -84px;
+  }
+  .switch-to-mobile.mdb-angular-mobile {
+    background-image: url('https://mdbootstrap.com/img/logo/mdb-angular.png');
+    background-position: 0 0;
+  }
+  .switch-to-mobile.mdb-react-mobile {
+    background-image: url('https://mdbootstrap.com/img/logo/mdb-angular.png');
+    background-position: 0 -123px;
+  }
+</style>

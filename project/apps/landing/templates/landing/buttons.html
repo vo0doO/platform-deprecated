@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+  Ваш правильный выбор !
+{% endblock %}
+{% block extra_header %}
+
+  <div style="top:68px;" class="card card-intro blue-gradient">
+
+    <div class="card-body white-text rgba-black-light text-center">
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-md-6 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+
+          <h1 class="font-weight-bold mb-3 h2">Онлайн - Банкротство</h1>
+
+          <h5 class="mb-2 h5">Самый популярный в мире способ списания долгов, теперь доступен и жителям Российской Федерации.</h5>
+          <br />
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+       {% include "landing/phone_input_action.html" %}
+    </div>
+
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<!--Main layout-->
+  <main class="mt-5 pt-5">
+    {% include "landing/pricing.html" %}
+  </main>
+  <!--Main layout-->
+
+{% endblock content %}
